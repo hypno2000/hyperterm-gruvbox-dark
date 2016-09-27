@@ -63,3 +63,7 @@ exports.decorateConfig = config => {
 		`
   })
 }
+exports.decorateBrowserOptions = defaults => Object.assign({}, defaults, {
+  titleBarStyle: 'hidden',
+  transparent: false
+})
